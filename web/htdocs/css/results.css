@@ -1,0 +1,356 @@
+/* results */
+#menu {
+    text-align: center;
+}
+#stats {
+    padding: 20px;
+    text-align: left;
+    font-size: 15px;
+    overflow: auto;
+}
+#stats h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 10px 0 15px 0;
+}
+#stats .group {
+    float: left;
+    width: 50%;
+    padding: 0 30px 0 0;
+}
+#stats ul {
+    padding: 0 0 30px 20px;
+}
+#stats .group ul:last-child {
+    padding-bottom: 0;
+}
+#stats li {
+    margin: 0 0 10px 0;
+}
+#bottom {
+    padding: 15px 15px 0 15px;
+    text-align: left;
+    font-size: 12px;
+}
+#narrow, #short {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#error {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+/* widescreen large */
+@media screen and (min-width: 901px) {
+    #logo {
+        position: absolute;
+        top: 15px;
+        left: 50px;
+        width: 200px;
+        height: 200px;
+        background-image: url('../img/miecobici_v_m.png');
+    }
+    #menu {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        width: 300px;
+        padding: 0 15px;
+    }
+    #menu button {
+        width: 250px;
+        margin: 10px 0;
+    }
+    #stats {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 300px;
+        right: 0;
+    }
+    #map {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 300px;
+        right: 0;
+    }
+    #bottom {
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+    }
+}
+
+/* widescreen medium */
+@media screen and (min-width: 901px) and (max-height: 480px) {
+    #logo {
+        top: 10px;
+        height: 80px;
+        background-image: url('../img/miecobici_h_m.png');
+    }
+    #menu {
+        top: 100px;
+        padding: 0 15px;
+    }
+    #menu button {
+        width: 200px;
+        margin: 10px 0;
+    }
+    #stats {
+        font-size: 12px;
+    }
+    #stats h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 15px 0;
+    }
+    #stats .group {
+        padding: 0 15px 0 0;        
+    }
+    #stats ul {
+        padding: 0 0 10px 20px;
+    }
+}
+
+/* widescreen small */
+@media screen and (min-width: 901px) and (max-height: 350px) {
+    #logo {
+        display: none;
+    }
+    #menu {
+        top: 20px;
+    }
+}
+
+
+/* tablet large */
+@media screen and (max-width: 900px) and (min-height: 801px) and (min-width: 701px) {
+    #logo {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 200px;
+        height: 200px;
+        background-image: url('../img/miecobici_v_m.png');
+    }
+    #menu {
+        position: absolute;
+        top: 0;
+        left: 220px;
+        right: 0;
+        padding: 35px 0;
+    }
+    #menu button {
+        width: 80%;
+        margin: 15px;
+    }
+    #stats {
+        position: absolute;
+        top: 210px;
+        bottom: 70px;
+        left: 0;
+        right: 0;
+    }
+    #map {
+        display: none;
+        position: absolute;
+        top: 210px;
+        bottom: 70px;
+        left: 0;
+        right: 0;
+    }
+    #bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    #bottom .group {
+        width: 100%;
+    }
+    #bottom p {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* tablet medium */
+@media screen and (max-width: 900px) and (max-height: 800px) and (min-width: 701px) and (min-height: 551px) {
+    #logo {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 200px;
+        height: 80px;
+        background-image: url('../img/miecobici_h_m.png');
+    }
+    #menu {
+        position: absolute;
+        top: 0;
+        left: 240px;
+        right: 0;
+        padding: 25px 0;
+    }
+    #menu .btn-wrapper {
+        float: left;
+        width: 50%;
+    }
+    #menu button {
+        width: 90%;
+    }
+    #stats {
+        position: absolute;
+        top: 100px;
+        bottom: 70px;
+        left: 0;
+        right: 0;
+        font-size: 12px;
+    }
+    #stats h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 15px 0;
+    }
+    #stats .group {
+        padding: 0 15px 0 0;        
+    }
+    #stats ul {
+        padding: 0 0 10px 20px;
+    }
+    #map {
+        display: none;
+        position: absolute;
+        top: 100px;
+        bottom: 70px;
+        left: 0;
+        right: 0;
+    }    
+    #bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    #bottom .group {
+        width: 100%;
+    }
+    #bottom p {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* smartphone */
+@media screen and (max-width: 900px) and (max-height: 550px), screen and (max-width: 700px) {
+    #logo {
+        display: none;
+    }
+    #menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 5px;
+    }
+    #menu .btn-wrapper {
+        float: left;
+        width: 50%;
+    }
+    #menu button {
+        width: 90%;
+        font-size: 13px;
+    }
+    #stats {
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        font-size: 12px;
+    }
+    #stats h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #stats .group {
+        width: 100%;
+        padding: 0 15px 0 0;
+    }
+    #stats ul {
+        padding: 0 0 0 20px;
+    }
+    #map {
+        display: none;
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+    }
+    #bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 5px;
+        text-align: center;
+        font-size: 10px;
+    }
+    #bottom p {
+        float: left;
+        width: 45%;
+        margin: 5px;
+    }
+}
+
+/* smartphone fix bottom */
+@media screen and (max-width: 500px) and (min-width: 351px) {
+    #stats, #map {
+        bottom: 100px;
+    }
+    #bottom p {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    #stats, #map {
+        bottom: 65px;
+    }
+}
+
+/* not supported */
+@media screen and (max-width: 300px) {
+    #logo, #menu, #stats, #map, #bottom {
+        display: none !important;
+    }
+    #narrow {
+        display: table !important;
+    }
+}
+@media screen and (max-height: 280px) {
+    #logo, #menu, #stats, #map, #bottom {
+        display: none !important;
+    }
+    #short {
+        display: table !important;
+    }
+}
+
+/* map */
+.infoWindow p {
+    font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+    color: #333333;
+    text-size: 13px;
+    line-height: 1.5;
+}

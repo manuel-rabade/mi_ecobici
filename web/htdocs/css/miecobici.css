@@ -1,0 +1,25 @@
+/* defaults */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    display: none;
+}
+h2 {
+    display: none;
+}
+.error {
+    color: #ff0039;
+}
+#page {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#valign {
+    display: table-cell;
+    vertical-align: middle;
+}

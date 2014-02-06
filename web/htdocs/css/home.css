@@ -1,0 +1,100 @@
+/* home */
+#home {
+    margin: 0 auto;
+}
+#home #welcome {
+    position: static;
+    display: block;
+    margin: 0 auto;
+}
+#form-home {
+    margin: 10px 0;
+}
+
+/* large */
+@media screen and (min-width: 451px) {
+    #home {
+        width: 450px;
+    }
+    #home #welcome {
+        width: 300px;
+        height: 300px;
+        background-image: url('../img/miecobici_v_l.png');
+    }
+    #home .lead {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    #form-home {
+        margin: 30px 0;
+        display: block;
+    }
+    #input-card {
+        width: 300px;
+        float: left;
+    }
+    #btn-continue {
+        margin-top: 1px;
+    }
+    #home #help {
+        margin: 30px 0;
+        font-size: 16px;   
+    }
+}
+
+/* medium */
+@media screen and (max-width: 450px) and (min-width: 301px), screen and (max-height: 600px) and (min-height: 501px) {
+    #home {
+        width: 300px;
+    }
+    #home #welcome {
+        width: 200px;
+        height: 200px;
+        background-image: url('../img/miecobici_v_m.png');
+    }
+    #home .lead {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    #form-home {
+        margin: 20px 0;
+    }
+    #input-card, #btn-continue {
+        margin: 5px 0;
+    }
+    #home #help {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+}
+
+/* small */
+@media screen and (max-width: 300px), screen and (max-height: 500px) {
+    #home {
+        width: 200px;
+        margin: 0 auto;
+    }
+    #home #welcome {
+        width: 100px;
+        height: 100px;
+        background-image: url('../img/miecobici_v_s.png');
+    }
+    #home .lead {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    #form-home {
+        margin: 10px 0;
+    }
+    #input-card, #btn-continue {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    #input-card {
+        width: 200px;
+    }
+    #home #help {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+}

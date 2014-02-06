@@ -1,0 +1,53 @@
+/* about */
+#about {
+    margin: 0 auto;
+    padding: 0 0 0 15px;
+}
+
+/* large */
+@media screen and (min-width: 451px) {
+    #about {
+        width: 450px;
+    }
+    #about #header {
+        width: 250px;
+        height: 100px;
+        margin: 10px auto;
+        background-image: url('../img/miecobici_h_l.png');
+    }
+    #about p {
+        font-size: 16px;
+    }
+}
+
+/* medium */
+@media screen and (max-width: 450px) and (min-width: 301px) {
+    #about {
+        width: 300px;
+    }
+    #about #header {
+        width: 200px;
+        height: 80px;
+        margin: 10px auto;
+        background-image: url('../img/miecobici_h_m.png');
+    }
+    #about p {
+        font-size: 14px;
+    }
+}
+
+/* small */
+@media screen and (max-width: 300px) {
+    #about {
+        width: 200px;
+    }    
+    #about #header {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        background-image: url('../img/miecobici_v_s.png');
+    }
+    #about p {
+        font-size: 12px;
+    }
+}
