@@ -18,7 +18,7 @@
 <div id="stats">
   <h2>Estadísticas</h2>
   <div class="group">
-    <h3>Totales</h3>
+    <h3>En total</h3>
     <ul>
       <li>Has viajado <?=$this->res['stats']['trips']?> veces en
         Ecobici</li>
@@ -26,11 +26,9 @@
         kilómetros</li>
       <li>Has utilizado <?=$this->res['stats']['stations']?>
         estaciónes</li>
-      <li>Tu primer viaje fue el XX-XXX-XXXX y el último el
-        XX-XXX-XXXX</li>
       <li>Has usado Ecobici X días</li>
     </ul>
-    <h3>Promedios</h3>
+    <h3>En promedio</h3>
     <ul>
       <li>Recorres <?=$this->res['stats']['avg']?> kilómetros por
         viaje</li>
@@ -48,14 +46,15 @@
         gasolina)</li>
       <li>Quemaste X kcal</li>
     </ul>
-    <h3>Tu uso de Ecobici</h3>
+    <h3>Interesante</h3>
     <ul>
-      <li>Has utilizado X bicicletas diferentes pero utilizaste X veces
-        la bicicleta X</li>
+      <li>Tu primer viaje fue el XX-XXX-XXXX y el último el
+        XX-XXX-XXXX</li>
+      <li>Has utilizado Ecobici X horas continuas en X bicicletas
+        diferentes</li>
       <li>El día de la semana que más ocupas Ecobici es el XXXXX</li>
       <li>Tu semana más activa fue del XX-XXX-XXXX al X-XXX-XXXX con un
         total de X viajes</li>
-      <li>Has utilizado Ecobici X horas continuas</li>
     </ul>
   </div>
 </div>
