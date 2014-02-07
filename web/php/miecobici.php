@@ -43,10 +43,13 @@ class MiEcobici {
   
   /* devuelve url */
   function url ($path = NULL) {
-    if (!is_null($path)) {
-      return implode('/', array($this->base, $path));
+    if (is_null($path)) {
+      return $this->base;
     }
-    return $this->base;
+    if ($this->base == '/') {
+      return $this->base . $path;
+    }
+    return implode('/', array($this->base, $path));
   }
 
   /* output de la clase */
