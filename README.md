@@ -17,6 +17,6 @@ Instalacion
 3. El servidor debe soportar URLs limpias en la raiz del sitio web. Por
    ejemplo la configuración para nginx sería:
 
-   location / {
-     try_files $uri $uri/ /index.php?$args;
-   }
+        location / {
+          try_files $uri $uri/ /index.php?$args;
+        }
