@@ -1,5 +1,8 @@
 <?php
 
+setlocale(LC_TIME, 'es_MX', 'es_ES');
+date_default_timezone_set('America/Mexico_City');
+
 class MiEcobici {
   /* ruta de acceso a la carpeta web */
   private $path;
@@ -39,7 +42,7 @@ class MiEcobici {
       $this->card = NULL;
     }
     return;
-  }    
+  }
   
   /* devuelve url */
   function url ($path = NULL) {
@@ -75,7 +78,17 @@ class MiEcobici {
   private function _analytics () {
     /* inicializamos analisis */
     $tmp = array('total' => array('km' => 0,
-                                  'trips' => 0),
+                                  'trips' => 0,
+                                  'mins' => 0),
+                 'dates' => array(),
+                 'wdays' => array('1' => 0,
+                                  '2' => 0,
+                                  '3' => 0,
+                                  '4' => 0,
+                                  '5' => 0,
+                                  '6' => 0,
+                                  '7' => 0),
+                 'bicycles' => array(),
                  'stations' => array('top' => array('count' => 0,
                                                     'stations' => array()),
                                      'bottom' => array('count' => 100000,
@@ -136,6 +149,32 @@ class MiEcobici {
         continue;
       }
 
+      /* parsing de fechas */
+      $origTimestamp = strtotime($trip['date_removed']);
+      $destTimestamp = strtotime($trip['date_arrived']);
+
+      /* contamos fecha del viaje */
+      $date = date('Ymd', $origTimestamp);
+      if (isset($tmp['dates'][$date])) {
+        $tmp['dates'][$date]++;
+      } else {
+        $tmp['dates'][$date] = 1;
+      }
+
+      /* contamos dia del viaje */
+      $day = date('N', $origTimestamp);
+      $tmp['wdays'][$day]++;
+
+      /* contamos minutos del viaje */
+      $tmp['total']['mins'] += ($destTimestamp - $origTimestamp) / 60;
+
+      /* contamos bicicleta */
+      if (isset($tmp['bicycles'][$trip['bike']])) {
+        $tmp['bicycles'][$trip['bike']]++;
+      } else {
+        $tmp['bicycles'][$trip['bike']] = 1;
+      }
+      
       /* renomabramos estaciones cercanas */
       if (isset($this->csv['rename'][$orig])) {
         $orig = $this->csv['rename'][$orig];
@@ -274,8 +313,8 @@ class MiEcobici {
     $this->res['stats']['km'] = sprintf('%.1f', $tmp['total']['km']);
     $this->res['stats']['stations'] = count($this->res['stations']);
 
-    $avg = $tmp['total']['km'] / $tmp['total']['trips'];
-    $this->res['stats']['avg'] = sprintf('%.1f', $avg);
+    $avg_km = $tmp['total']['km'] / $tmp['total']['trips'];
+    $this->res['stats']['avg_km'] = sprintf('%.1f', $avg_km);
 
     $co2 = $tmp['total']['km'] * 0.214; /* gCO2/Km */
     $this->res['stats']['co2'] = sprintf('%.1f', $co2);
@@ -286,6 +325,28 @@ class MiEcobici {
     $money = 12.22 * $liters; /* pesos por litro ene/2014 */
     $this->res['stats']['money'] = sprintf('%.1f', $money);
     
+    $this->res['stats']['days'] = count($tmp['dates']);
+
+    $avg_trips = $tmp['total']['trips'] / count($tmp['dates']);
+    $this->res['stats']['avg_trips'] = sprintf('%.1f', $avg_trips);
+
+    $avg_min = $tmp['total']['mins'] / $tmp['total']['trips'];
+    $this->res['stats']['avg_mins'] = sprintf('%u', $avg_min);
+
+    $hrs = $tmp['total']['mins'] / 60;
+    $this->res['stats']['hrs'] = sprintf('%u', $hrs);
+
+    $this->res['stats']['bicycles'] = count($tmp['bicycles']);
+    
+    $this->res['stats']['wdays'] = $tmp['wdays'];
+
+    $dates = array_keys($tmp['dates']);
+    sort($dates);
+    $start = strftime('%e de %B de %G', strtotime($dates[0]));
+    $this->res['dates']['start'] = $start;
+    $end = strftime('%e de %B de %G', strtotime($dates[count($dates) - 1]));
+    $this->res['dates']['end'] = $end;
+
     //print_r($this->res);
     return TRUE;
   }

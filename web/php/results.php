@@ -26,14 +26,16 @@
         kilómetros</li>
       <li>Has utilizado <?=$this->res['stats']['stations']?>
         estaciónes</li>
-      <li>Has usado Ecobici X días</li>
+      <li>Has usado Ecobici <?=$this->res['stats']['days']?> días</li>
     </ul>
     <h3>En promedio</h3>
     <ul>
-      <li>Recorres <?=$this->res['stats']['avg']?> kilómetros por
+      <li>Recorres <?=$this->res['stats']['avg_km']?> kilómetros por
         viaje</li>
-      <li>Haces X viajes por día</li>
-      <li>Tus viajes duran X minutos</li>
+      <li>Haces <?=$this->res['stats']['avg_trips']?> viajes por
+        día</li>
+      <li>Tus viajes duran <?=$this->res['stats']['avg_mins']?>
+        minutos</li>
   </div>
   <div class="group">
     <h3>Por utilizar Ecobici en lugar de un auto</h3>
@@ -44,19 +46,30 @@
         <?=$this->res['stats']['money']?> 
         (<?=$this->res['stats']['liters']?> litros de
         gasolina)</li>
-      <li>Quemaste X kcal</li>
+      <!-- <li>Quemaste X kcal</li> -->
     </ul>
     <h3>Interesante</h3>
     <ul>
-      <li>Tu primer viaje fue el XX-XXX-XXXX y el último el
-        XX-XXX-XXXX</li>
-      <li>Has utilizado Ecobici X horas continuas en X bicicletas
+      <li>Tu primer viaje fue el <?php print_r($this->res['dates']['start'])?> y el
+        último el <?php print_r($this->res['dates']['end'])?></li>
+      <li>Has utilizado Ecobici <?=$this->res['stats']['hrs']?> horas
+        continuas en <?=$this->res['stats']['bicycles']?> bicicletas
         diferentes</li>
-      <li>El día de la semana que más ocupas Ecobici es el XXXXX</li>
-      <li>Tu semana más activa fue del XX-XXX-XXXX al X-XXX-XXXX con un
-        total de X viajes</li>
+      <li>Tu uso de Ecobici en la semana:</li>
+      <ul>
+        <li>Lunes: <?=$this->res['stats']['wdays'][1]?></li>
+        <li>Martes: <?=$this->res['stats']['wdays'][2]?></li>
+        <li>Miércoles: <?=$this->res['stats']['wdays'][3]?></li>
+        <li>Jueves: <?=$this->res['stats']['wdays'][4]?></li>
+        <li>Viernes: <?=$this->res['stats']['wdays'][5]?></li>
+        <li>Sábado: <?=$this->res['stats']['wdays'][6]?></li>
+        <li>Domingo: <?=$this->res['stats']['wdays'][7]?></li>
+      </ul>
+      <!-- <li>Tu semana más activa fue del XX-XXX-XXXX al X-XXX-XXXX
+        con un total de X viajes</li> -->
     </ul>
   </div>
+  <!--<pre><?php print_r($this->res) ?></pre> -->
 </div>
 
 <!-- google maps -->
