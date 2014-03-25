@@ -320,10 +320,10 @@ class MiEcobici {
     $this->res['stats']['co2'] = sprintf('%.1f', $co2);
 
     $liters = $tmp['total']['km'] / 10.91; /* Km/L */
-    $this->res['stats']['liters'] = sprintf('%.1f', $liters);
+    $this->res['stats']['liters'] = sprintf('%.0f', $liters);
 
     $money = 12.22 * $liters; /* pesos por litro ene/2014 */
-    $this->res['stats']['money'] = sprintf('%.1f', $money);
+    $this->res['stats']['money'] = sprintf('%.0f', $money);
     
     $this->res['stats']['days'] = count($tmp['dates']);
 
@@ -331,10 +331,10 @@ class MiEcobici {
     $this->res['stats']['avg_trips'] = sprintf('%.1f', $avg_trips);
 
     $avg_min = $tmp['total']['mins'] / $tmp['total']['trips'];
-    $this->res['stats']['avg_mins'] = sprintf('%u', $avg_min);
+    $this->res['stats']['avg_mins'] = sprintf('%.0f', $avg_min);
 
     $hrs = $tmp['total']['mins'] / 60;
-    $this->res['stats']['hrs'] = sprintf('%u', $hrs);
+    $this->res['stats']['hrs'] = sprintf('%.0f', $hrs);
 
     $this->res['stats']['bicycles'] = count($tmp['bicycles']);
     
