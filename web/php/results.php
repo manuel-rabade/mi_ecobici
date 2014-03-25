@@ -79,7 +79,7 @@
   <div class="well well-sm">
     <span class="text">Tu primer viaje fue el</span>
     <span class="date"><?=$this->res['dates']['start']?></span>
-    <span class="text">Y tu último viaje</span>
+    <span class="text">Y tu último viaje el</span>
     <span class="date"><?=$this->res['dates']['end']?></span>
   </div>
   <!-- Quemaste X kcal -->
