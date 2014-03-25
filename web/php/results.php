@@ -19,9 +19,9 @@
   <h2>Estadísticas</h2>
   <!-- por usar ecobici en lugar de un auto -->
   <div class="well well-sm">
-    <span class="text">Evistaste liberar</span>
+    <span class="text">Evistaste liberar al ambiente</span>
     <span class="data"><?=$this->res['stats']['co2']?></span>
-    <span class="text">Kg de CO<sub>2</sub> al medio ambiente</span>
+    <span class="text">Kilogramos de CO<sub>2</sub></span>
   </div>
   <div class="well well-sm">
     <span class="text">Ahorraste</span>
