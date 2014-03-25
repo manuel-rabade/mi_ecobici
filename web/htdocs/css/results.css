@@ -8,6 +8,23 @@
     font-size: 15px;
     overflow: auto;
 }
+#stats .well {
+    width: auto;
+    text-align: center;
+    float: left;
+}
+#stats .well .text {
+    display: block;  
+}
+#stats .well .data {
+    display: block;
+    line-height: 1.1;
+}
+#stats .well .date {
+    display: block;
+    line-height: 1.1;
+}
+/*
 #stats h3 {
     font-size: 22px;
     font-weight: normal;
@@ -27,6 +44,7 @@
 #stats li {
     margin: 0 0 10px 0;
 }
+*/
 #bottom {
     padding: 15px 15px 0 15px;
     text-align: left;
@@ -72,6 +90,16 @@
         left: 300px;
         right: 0;
     }
+    #stats .well {
+        margin: 0 25px 25px 0;        
+    }
+    #stats .well .data {
+        font-size: 64px;        
+    }
+    #stats .well .date {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
     #map {
         display: none;
         position: absolute;
@@ -105,6 +133,17 @@
     #stats {
         font-size: 12px;
     }
+    #stats .well {
+        margin: 0 15px 15px 0;        
+    }
+    #stats .well .data {
+        font-size: 48px;        
+    }
+    #stats .well .date {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    /*
     #stats h3 {
         font-size: 16px;
         font-weight: bold;
@@ -116,6 +155,7 @@
     #stats ul {
         padding: 0 0 10px 20px;
     }
+    */
 }
 
 /* widescreen small */
@@ -156,6 +196,16 @@
         bottom: 70px;
         left: 0;
         right: 0;
+    }
+    #stats .well {
+        margin: 0 25px 25px 0;        
+    }
+    #stats .well .data {
+        font-size: 64px;        
+    }
+    #stats .well .date {
+        font-size: 32px;
+        margin-bottom: 10px;
     }
     #map {
         display: none;
@@ -213,6 +263,17 @@
         right: 0;
         font-size: 12px;
     }
+    #stats .well {
+        margin: 0 15px 15px 0;        
+    }
+    #stats .well .data {
+        font-size: 48px;        
+    }
+    #stats .well .date {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    /*
     #stats h3 {
         font-size: 16px;
         font-weight: bold;
@@ -224,6 +285,7 @@
     #stats ul {
         padding: 0 0 10px 20px;
     }
+    */
     #map {
         display: none;
         position: absolute;
@@ -277,6 +339,17 @@
         padding: 10px;
         font-size: 12px;
     }
+    #stats .well {
+        margin: 0 10px 10px 0;        
+    }
+    #stats .well .data {
+        font-size: 32px;        
+    }
+    #stats .well .date {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    /*
     #stats h3 {
         font-size: 16px;
         font-weight: bold;
@@ -288,6 +361,7 @@
     #stats ul {
         padding: 0 0 0 20px;
     }
+    */
     #map {
         display: none;
         position: absolute;

@@ -17,58 +17,81 @@
 <!-- estadisticas -->
 <div id="stats">
   <h2>Estadísticas</h2>
-  <div class="group">
-    <h3>En total</h3>
-    <ul>
-      <li>Has viajado <?=$this->res['stats']['trips']?> veces en
-        Ecobici</li>
-      <li>Te has trasladado <?=$this->res['stats']['km']?>
-        kilómetros</li>
-      <li>Has utilizado <?=$this->res['stats']['stations']?>
-        estaciónes</li>
-      <li>Has usado Ecobici <?=$this->res['stats']['days']?> días</li>
-    </ul>
-    <h3>En promedio</h3>
-    <ul>
-      <li>Recorres <?=$this->res['stats']['avg_km']?> kilómetros por
-        viaje</li>
-      <li>Haces <?=$this->res['stats']['avg_trips']?> viajes por
-        día</li>
-      <li>Tus viajes duran <?=$this->res['stats']['avg_mins']?>
-        minutos</li>
+  <!-- por usar ecobici en lugar de un auto -->
+  <div class="well well-sm">
+    <span class="text">Evistaste liberar</span>
+    <span class="data"><?=$this->res['stats']['co2']?></span>
+    <span class="text">Kg de CO<sub>2</sub> al medio ambiente</span>
   </div>
-  <div class="group">
-    <h3>Por utilizar Ecobici en lugar de un auto</h3>
-    <ul>
-      <li>Evistaste liberar al medio ambiente
-        <?=$this->res['stats']['co2']?> Kg de CO<sub>2</sub></li>
-      <li>Ahorraste $
-        <?=$this->res['stats']['money']?> 
-        (<?=$this->res['stats']['liters']?> litros de
-        gasolina)</li>
-      <!-- <li>Quemaste X kcal</li> -->
-    </ul>
-    <h3>Interesante</h3>
-    <ul>
-      <li>Tu primer viaje fue el <?php print_r($this->res['dates']['start'])?> y el
-        último el <?php print_r($this->res['dates']['end'])?></li>
-      <li>Has utilizado Ecobici <?=$this->res['stats']['hrs']?> horas
-        continuas en <?=$this->res['stats']['bicycles']?> bicicletas
-        diferentes</li>
-      <li>Tu uso de Ecobici en la semana:</li>
-      <ul>
-        <li>Lunes: <?=$this->res['stats']['wdays'][1]?></li>
-        <li>Martes: <?=$this->res['stats']['wdays'][2]?></li>
-        <li>Miércoles: <?=$this->res['stats']['wdays'][3]?></li>
-        <li>Jueves: <?=$this->res['stats']['wdays'][4]?></li>
-        <li>Viernes: <?=$this->res['stats']['wdays'][5]?></li>
-        <li>Sábado: <?=$this->res['stats']['wdays'][6]?></li>
-        <li>Domingo: <?=$this->res['stats']['wdays'][7]?></li>
-      </ul>
-      <!-- <li>Tu semana más activa fue del XX-XXX-XXXX al X-XXX-XXXX
-        con un total de X viajes</li> -->
-    </ul>
+  <div class="well well-sm">
+    <span class="text">Ahorraste</span>
+    <span class="data">$&nbsp;<?=$this->res['stats']['money']?></span>
+    <span class="text"><?=$this->res['stats']['liters']?> litros de
+        gasolina</span>    
   </div>
+  <!-- promedios -->
+  <div class="well well-sm">
+    <span class="text">En promedio haces</span>
+    <span class="data"><?=$this->res['stats']['avg_trips']?></span>
+    <span class="text">viajes por día</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">Tu viaje dura</span>
+    <span class="data"><?=$this->res['stats']['avg_mins']?></span>
+    <span class="text">minutos en promedio</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">En promedio recorres</span>
+    <span class="data"><?=$this->res['stats']['avg_km']?></span>
+    <span class="text">kilómetros por viaje</span>
+  </div>
+  <!-- totales -->
+  <div class="well well-sm">
+    <span class="text">Has viajado</span>
+    <span class="data"><?=$this->res['stats']['trips']?></span>
+    <span class="text">veces en Ecobici</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">Te has trasladado</span>
+    <span class="data"><?=$this->res['stats']['km']?></span>
+    <span class="text">kilómetros en total</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">Has utilizado</span>
+    <span class="data"><?=$this->res['stats']['stations']?></span>
+    <span class="text">estaciones diferentes</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">Has usado Ecobici</span>
+    <span class="data"><?=$this->res['stats']['days']?></span>
+    <span class="text">días diferentes</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">Tus viajes suman</span>
+    <span class="data"><?=$this->res['stats']['hrs']?></span>
+    <span class="text">horas en Ecobici</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">Has usado</span>
+    <span class="data"><?=$this->res['stats']['bicycles']?></span>
+    <span class="text">bicicletas diferentes</span>
+  </div>
+  <div class="well well-sm">
+    <span class="text">Tu primer viaje fue el</span>
+    <span class="date"><?=$this->res['dates']['start']?></span>
+    <span class="text">Y tu último viaje</span>
+    <span class="date"><?=$this->res['dates']['end']?></span>
+  </div>
+  <!-- Quemaste X kcal -->
+  <!-- Tu semana más activa fue del XX-XXX-XXXX al X-XXX-XXXX
+       con un total de X viajes -->
+  <!-- Lunes: <?=$this->res['stats']['wdays'][1]?>
+       Martes: <?=$this->res['stats']['wdays'][2]?>
+       Miércoles: <?=$this->res['stats']['wdays'][3]?>
+       Jueves: <?=$this->res['stats']['wdays'][4]?>
+       Viernes: <?=$this->res['stats']['wdays'][5]?>
+       Sábado: <?=$this->res['stats']['wdays'][6]?>
+       Domingo: <?=$this->res['stats']['wdays'][7]?> -->
   <!--<pre><?php print_r($this->res) ?></pre> -->
 </div>
 
