@@ -16,14 +16,15 @@ $(document).ready(function() {
     $('#btn-stats').click(showStats);
     $('#share-fb').click(shareFB);
     $('#share-tw').click(shareTW);
+    drawMap();
 });
 
 /* mostrar mapa o estadisticas */
 function showStats (event) {
     $('#stats').css('display', 'block');
     $('#map').css('display', 'none');
-    $('#btn-stats').prop('disabled', true);
-    $('#btn-map').prop('disabled', false);
+    $('#btn-map').css('display', 'inline-block');
+    $('#btn-stats').css('display', 'none');
     ga('send', {
         'hitType': 'event',
         'eventCategory': 'button',
@@ -33,8 +34,8 @@ function showStats (event) {
 function showMap (event) {
     $('#stats').css('display', 'none');
     $('#map').css('display', 'block');
-    $('#btn-stats').prop('disabled', false);
-    $('#btn-map').prop('disabled', true);
+    $('#btn-map').css('display', 'none');
+    $('#btn-stats').css('display', 'inline-block');
     if (meMap) {
         google.maps.event.trigger(meMap, 'resize');
     } else {

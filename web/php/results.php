@@ -5,12 +5,12 @@
 <!-- menu -->
 <div id="menu">
   <div class="btn-wrapper">
-    <button id="btn-stats" type="button"
-            class="btn btn-default" disabled="true">Estadísticas</button>
+    <button id="btn-map" type="button"
+            class="btn btn-default">Mi mapa de viajes</button>
   </div>
   <div class="btn-wrapper">
-    <button id="btn-map" type="button"
-            class="btn btn-default">Mapa de viajes</button>
+    <button id="btn-stats" type="button"
+            class="btn btn-default">Mis estadísticas</button>
   </div>
 </div>
 
