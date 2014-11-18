@@ -1,4 +1,4 @@
-Copyright 2008-2010 Manuel Rodrigo Rábade García <manuel@rabade.net>
+Copyright 2014 Manuel Rodrigo Rabade Garcia <manuel@rabade.net>
 
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the
