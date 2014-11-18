@@ -18,18 +18,6 @@ Instalacion
           try_files $uri $uri/ /index.php?$args;
         }
 
-Autores
--------
-
-[Corina Olicon](http://twitter.com/c0rysi), [Virgilio
-Pasotti](http://twitter.com/pasotti_) y [Manuel
-Rábade](http://twitter.com/manuelrabade).
-
-Licencia
---------
-
-Esta obra está bajo una [Licencia Pública General de GNU](LICENSE.txt).
-
 Capturas de pantalla
 --------------------
 
@@ -74,3 +62,15 @@ Capturas de pantalla
 #### Estadísticas
 
 ![Estadísticas](/doc/img/mobile-3.png?raw=true "Estadísticas")
+
+Autores
+-------
+
+[Corina Olicon](http://twitter.com/c0rysi), [Virgilio
+Pasotti](http://twitter.com/pasotti_), [Manuel
+Rábade](http://twitter.com/manuelrabade).
+
+Licencia
+--------
+
+Esta obra está bajo una [Licencia Pública General de GNU](LICENSE.txt).
