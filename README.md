@@ -1,22 +1,18 @@
 Mi Ecobici
 ==========
 
-Sitio web para que usuarios de Ecobici conozcan sus estadísticas de uso
-del sistema y visualicen en un mapa interactivo sus viajes.
+Sitio web para que usuarios de [Ecobici](https://www.ecobici.df.gob.mx/)
+(sistema de transporte urbano individual en bicicletas) conozcan sus
+estadísticas de uso del sistema, como impactan positivamente el medio
+ambiente y visualicen en un mapa interactivo sus viajes.
 
-Instalacion
------------
+Mi Ecobici es posible gracias a los datos y API del [Laboratorio de
+Datos](http://datos.labplc.mx), especificamente el [API de
+Ecobici](http://datos.labplc.mx/movilidad/ecobici.info).
 
-1. Es necesario un servidor web con PHP.
-
-2. La raíz del sitio web debe apuntar a `web/htdocs`
-
-3. El servidor debe soportar URLs limpias en la raiz del sitio web. Por
-   ejemplo la configuración para nginx sería:
-
-        location / {
-          try_files $uri $uri/ /index.php?$args;
-        }
+Agradecemos al programa **Ecobici** de la [Secretaria de Medio
+Ambiente](http://www.sedema.df.gob.mx) por su colaboración en la
+apertura de datos que hacen posible a este proyecto.
 
 Capturas de pantalla
 --------------------
@@ -63,12 +59,26 @@ Capturas de pantalla
 
 ![Estadísticas](/doc/img/mobile-3.png?raw=true "Estadísticas")
 
+Instalación
+-----------
+
+1. Es necesario un servidor web con PHP.
+
+2. La raíz del sitio web debe apuntar a `web/htdocs`
+
+3. El servidor debe soportar URLs limpias en la raíz del sitio web. Por
+   ejemplo la configuración para nginx sería:
+
+        location / {
+          try_files $uri $uri/ /index.php?$args;
+        }
+
 Autores
 -------
 
-[Corina Olicon](http://twitter.com/c0rysi), [Virgilio
-Pasotti](http://twitter.com/pasotti_), [Manuel
-Rábade](http://twitter.com/manuelrabade).
+- [Corina Olicon](http://twitter.com/c0rysi)
+- [Virgilio Pasotti](http://twitter.com/pasotti_)
+- [Manuel Rábade](http://twitter.com/manuelrabade)
 
 Licencia
 --------
