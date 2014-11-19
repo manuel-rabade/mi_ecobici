@@ -21,43 +21,43 @@ Capturas de pantalla
 
 #### Página de inicio
 
-![Página de inicio](/doc/img/desktop-1.png?raw=true "Página de inicio")
+![Página de inicio](/doc/desktop-1.png?raw=true "Página de inicio")
 
 #### Mapa de viajes
 
-![Mapa de viajes](/doc/img/desktop-2.png?raw=true "Mapa de viajes")
+![Mapa de viajes](/doc/desktop-2.png?raw=true "Mapa de viajes")
 
 #### Estadísticas
 
-![Estadísticas](/doc/img/desktop-3.png?raw=true "Estadísticas")
+![Estadísticas](/doc/desktop-3.png?raw=true "Estadísticas")
 
 ### Versión tableta
 
 #### Página de inicio
 
-![Página de inicio](/doc/img/tablet-1.png?raw=true "Página de inicio")
+![Página de inicio](/doc/tablet-1.png?raw=true "Página de inicio")
 
 #### Mapa de viajes
 
-![Mapa de viajes](/doc/img/tablet-2.png?raw=true "Mapa de viajes")
+![Mapa de viajes](/doc/tablet-2.png?raw=true "Mapa de viajes")
 
 #### Estadísticas
 
-![Estadísticas](/doc/img/tablet-3.png?raw=true "Estadísticas")
+![Estadísticas](/doc/tablet-3.png?raw=true "Estadísticas")
 
 ### Versión móvil
 
 #### Página de inicio
 
-![Página de inicio](/doc/img/mobile-1.png?raw=true "Página de inicio")
+![Página de inicio](/doc/mobile-1.png?raw=true "Página de inicio")
 
 #### Mapa de viajes
 
-![Mapa de viajes](/doc/img/mobile-2.png?raw=true "Mapa de viajes")
+![Mapa de viajes](/doc/mobile-2.png?raw=true "Mapa de viajes")
 
 #### Estadísticas
 
-![Estadísticas](/doc/img/mobile-3.png?raw=true "Estadísticas")
+![Estadísticas](/doc/mobile-3.png?raw=true "Estadísticas")
 
 Instalación
 -----------
