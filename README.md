@@ -1,18 +1,18 @@
 Mi Ecobici
 ==========
 
-Sitio web para que usuarios de [Ecobici](https://www.ecobici.df.gob.mx/)
-(sistema de transporte urbano individual en bicicletas) conozcan sus
-estadísticas de uso del sistema, como impactan positivamente el medio
-ambiente y visualicen en un mapa interactivo sus viajes.
+Sitio web para que usuarios de [Ecobici](http://www.ecobici.df.gob.mx/)
+conozcan sus estadísticas de uso del sistema, como impactan
+positivamente el medio ambiente y visualicen en un mapa interactivo sus
+viajes.
 
 Mi Ecobici es posible gracias a los datos y API del [Laboratorio de
 Datos](http://datos.labplc.mx), especificamente el [API de
 Ecobici](http://datos.labplc.mx/movilidad/ecobici.info).
 
-Agradecemos al programa **Ecobici** de la [Secretaria de Medio
-Ambiente](http://www.sedema.df.gob.mx) por su colaboración en la
-apertura de datos que hacen posible a este proyecto.
+Agradecemos al **Sistema de Transporte Individual Ecobici** de la
+[Secretaria de Medio Ambiente](http://www.sedema.df.gob.mx) por su
+colaboración en la apertura de datos que hacen posible a este proyecto.
 
 Capturas de pantalla
 --------------------
