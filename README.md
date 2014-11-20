@@ -6,6 +6,21 @@ conozcan sus estadísticas de uso del sistema, como impactan
 positivamente el medio ambiente y visualicen en un mapa interactivo sus
 viajes.
 
+### Datos Abiertos
+
+Mi Ecobici es posible gracias a los datos y API del [Laboratorio de
+Datos](http://datos.labplc.mx), especificamente:
+
+- [API de Ecobici](http://datos.labplc.mx/movilidad/ecobici.info)
+- [Geolocalización de estaciones de
+  Ecobici](http://datos.labplc.mx/datasets/view/ecobiciestaciones)
+- [Distancia entre estaciones de
+  Ecobici](http://datos.labplc.mx/datasets/view/ecobici_distancias)
+
+Agradecemos al **Sistema de Transporte Individual Ecobici** de la
+[Secretaria de Medio Ambiente](http://www.sedema.df.gob.mx) por su
+colaboración en la apertura de datos que hacen posible a este proyecto.
+
 Capturas de pantalla
 --------------------
 
@@ -50,22 +65,6 @@ Capturas de pantalla
 #### Estadísticas
 
 ![Estadísticas](/doc/mobile-3.png?raw=true "Estadísticas")
-
-Datos Abiertos
---------------
-
-Mi Ecobici es posible gracias a los datos y API del [Laboratorio de
-Datos](http://datos.labplc.mx), especificamente:
-
-- [API de Ecobici](http://datos.labplc.mx/movilidad/ecobici.info)
-- [Geolocalización de estaciones de
-  Ecobici](http://datos.labplc.mx/datasets/view/ecobiciestaciones)
-- [Distancia entre estaciones de
-  Ecobici](http://datos.labplc.mx/datasets/view/ecobici_distancias)
-
-Agradecemos al **Sistema de Transporte Individual Ecobici** de la
-[Secretaria de Medio Ambiente](http://www.sedema.df.gob.mx) por su
-colaboración en la apertura de datos que hacen posible a este proyecto.
 
 Instalación
 -----------
