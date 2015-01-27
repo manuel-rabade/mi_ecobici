@@ -90,4 +90,4 @@ Autores
 Licencia
 --------
 
-Esta obra está bajo una [Licencia Pública General de GNU](LICENSE.txt).
+Esta obra es publicada bajo una [Licencia Pública General de GNU](LICENSE.txt).
